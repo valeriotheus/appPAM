@@ -1,11 +1,9 @@
+// App.js
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native'; // Importa o NavigationContainer
-import AppNavigator from './src/routes'; // Importa o AppNavigator
+import Routes from './routes'; // Certifique-se de ajustar o caminho do arquivo
 
-export default function App() {
-  return (
-    <NavigationContainer>
-      <AppNavigator /> {/* Carrega o AppNavigator para gerenciar a navegação */}
-    </NavigationContainer>
-  );
-}
+const App = () => {
+  return <Routes />;
+};
+
+export default App;
